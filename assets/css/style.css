@@ -523,7 +523,7 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 .skills-globe {
-  margin: 40px auto;
+  margin-top: 40px;
   text-align: center;
   padding: 20px 0;
 }

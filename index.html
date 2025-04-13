@@ -954,24 +954,30 @@
   <!-- TagCloud library -->
 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 
+<!-- TagCloud library -->
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
 <script>
-const texts = [
-  'Arduino', 'C++', 'MATLAB', 'Python', 'SolidWorks',
-  'Excel', 'PowerPoint', 'Unity', 'C#', 'HTML',
-  'CSS', 'Holography', 'Numpy', 'Matplotlib'
-];
+  document.addEventListener("DOMContentLoaded", function () {
+    const texts = [
+      'Arduino', 'C++', 'MATLAB', 'Python', 'SolidWorks',
+      'Excel', 'PowerPoint', 'Unity', 'C#', 'HTML',
+      'CSS', 'Holography', 'NumPy', 'Matplotlib'
+    ];
 
-  const container = '.tagcloud';
+    const container = '.tagcloud';
 
-  const options = {
-    radius: 180,
-    maxSpeed: 'normal',
-    initSpeed: 'normal',
-    keep: true
-  };
+    const options = {
+      radius: 180,
+      maxSpeed: 'normal',
+      initSpeed: 'normal',
+      keep: true
+    };
 
-  TagCloud(container, texts, options);
+    TagCloud(container, texts, options);
+  });
 </script>
+
 
 
   <!--
