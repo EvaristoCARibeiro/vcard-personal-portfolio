@@ -352,7 +352,7 @@ main {
   margin: 0 auto 15px auto;
 }
 
-.info-content .name .surname {
+.info-content .surname {
   display: block;
   font-size: calc(var(--fs-3) * 0.6); /* smaller than main name */
   font-weight: var(--fw-400);         /* optional: lighter */
@@ -522,7 +522,27 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+.skills-globe {
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px 0;
+}
 
+.skills-globe .h3 {
+  font-size: var(--fs-2);
+  color: var(--white-2);
+  margin-bottom: 20px;
+}
+
+.tagcloud {
+  width: 100%;
+  height: 400px;
+  font-size: 20px;
+  color: var(--white-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /**
  * #service 
