@@ -354,7 +354,7 @@ main {
 
 .info-content .surname {
   display: block;
-  font-size: calc(var(--fs-3) * 0.6); /* smaller than main name */
+  font-size: calc(var(--fs-3) * 0.5); /* smaller than main name */
   font-weight: var(--fw-400);         /* optional: lighter */
   opacity: 0.9;                       /* optional: softer */
   margin-top: 5px;
