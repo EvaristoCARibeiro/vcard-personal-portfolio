@@ -352,6 +352,14 @@ main {
   margin: 0 auto 15px auto;
 }
 
+.info-content .name .surname {
+  display: block;
+  font-size: calc(var(--fs-3) * 0.6); /* smaller than main name */
+  font-weight: var(--fw-400);         /* optional: lighter */
+  opacity: 0.9;                       /* optional: softer */
+  margin-top: 5px;
+}
+
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
