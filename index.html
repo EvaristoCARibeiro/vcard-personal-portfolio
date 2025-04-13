@@ -957,6 +957,34 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- TagCloud library -->
+  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+
+
+  <!-- TagCloud library -->
+  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const texts = [
+        'Arduino', 'C++', 'MATLAB', 'Python', 'SolidWorks',
+        'Excel', 'PowerPoint', 'Unity', 'C#', 'HTML',
+        'CSS', 'Holography', 'NumPy', 'Matplotlib'
+      ];
+  
+      const container = '.tagcloud';
+  
+      const options = {
+        radius: 180,
+        maxSpeed: 'normal',
+        initSpeed: 'normal',
+        keep: true
+      };
+  
+      TagCloud(container, texts, options);
+    });
+  </script>
 
 </body>
 
