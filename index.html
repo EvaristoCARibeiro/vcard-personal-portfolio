@@ -707,42 +707,22 @@
       </article>
 
   <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!-- TagCloud library -->
-  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-  
-  <!-- globe js script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const texts = [
-        'Arduino', 'C++', 'MATLAB', 'Python', 'SolidWorks',
-        'Excel', 'PowerPoint', 'Unity', 'C#', 'HTML',
-        'CSS', 'Holography', 'NumPy', 'Matplotlib'
-      ];
-  
-      const container = '.tagcloud';
-  
-      const options = {
-        radius: 180,
-        maxSpeed: 'normal',
-        initSpeed: 'normal',
-        keep: true
-      };
-  
-      TagCloud(container, texts, options);
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>  
+  <span class="tagcloud"></span>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
 <div id="version-text" style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: gray; z-index: 9999;">
-  v1.0.18
+  v1.0.20
+
 </div>
 
 </body>

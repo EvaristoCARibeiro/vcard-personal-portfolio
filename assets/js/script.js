@@ -5,8 +5,6 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-
-
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -15,23 +13,10 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
@@ -58,7 +43,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-select-value]");
+const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -114,12 +99,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
@@ -157,3 +136,29 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// initialize tag cloud when page is loaded
+document.addEventListener("DOMContentLoaded", function () {
+
+  // TAG CLOUD INITIALIZATION
+  const texts = [
+    'Arduino', 'C++', 'MATLAB', 'Python', 'SolidWorks',
+    'Excel', 'PowerPoint', 'Unity', 'C#', 'HTML',
+    'CSS', 'Holography', 'NumPy', 'Matplotlib'
+  ];
+
+  const container = '.tagcloud';
+
+  const options = {
+    radius: 180,
+    maxSpeed: 'normal',
+    initSpeed: 'normal',
+    keep: true
+  };
+
+  // check if the tagcloud container exists before initializing
+  if (document.querySelector(container)) {
+    TagCloud(container, texts, options);
+  }
+
+});
